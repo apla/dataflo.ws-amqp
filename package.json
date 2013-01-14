@@ -1,0 +1,23 @@
+{
+  "name": "dataflo.ws-amqp",
+  "version": "0.0.1",
+  "description": "AMQP module for dataflo.ws framework",
+  "main": "initiator/amqp.js",
+  "dependencies": {
+    "dataflo.ws": "*"
+  },
+  "scripts": {
+    "postinstall": "node -e \"require('dataflo.ws')('amqp')\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:apla/dataflo.ws-amqp.git"
+  },
+  "keywords": [
+    "dataflows",
+    "amqp"
+  ],
+  "author": "RIA Novosti Medialab",
+  "license": "GPLv3",
+  "readmeFilename": "README.md"
+}
