@@ -3,11 +3,8 @@
   "version": "0.0.1",
   "description": "AMQP module for dataflo.ws framework",
   "main": "initiator/amqp.js",
-  "dependencies": {
-    "dataflo.ws": "*"
-  },
   "scripts": {
-    "postinstall": "node -e \"require('dataflo.ws')('amqp')\""
+    "postinstall": "node -e \"require('dataflo.ws')('dataflo.ws-amqp')\""
   },
   "repository": {
     "type": "git",
