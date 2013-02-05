@@ -1,7 +1,7 @@
-var task = require('base'),
+var task = require('dataflo.ws/task/base'),
 	util = require('util'),
-	amqp = require('node-amqp/amqp'),
-	rabbitManager = require('rabbit-manager/rabbit-manager');
+	amqp = require('amqp'),
+	rabbitManager = require('../rabbit-manager');
 
 var rabbitConfig = project.config.consumerConfig.rabbit,
 	url = rabbitConfig.url,
