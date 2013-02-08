@@ -1,6 +1,5 @@
 var task = require('dataflo.ws/task/base'),
 	util = require('util'),
-	amqp = require('amqp'),
 	rabbitManager = require('../rabbit-manager');
 
 var rabbitConfig = project.config.consumerConfig.rabbit,
@@ -9,7 +8,7 @@ var rabbitConfig = project.config.consumerConfig.rabbit,
 
 
 var rabbit = module.exports = function (config) {
-	this.init (config);
+	this.init(config);
 };
 
 var OpenSockets = {};
@@ -21,6 +20,10 @@ util.extend(rabbit.prototype, {
 
 	run: function () {
 		this.failed('use method [publish|subsribe]');
+	},
+
+	ack: function () {
+		this.message.acknowledge();
 	},
 
 	publish: function () {
@@ -170,3 +173,4 @@ util.extend(rabbit.prototype, {
 		});
 	}
 });
+

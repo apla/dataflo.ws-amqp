@@ -1,10 +1,11 @@
 {
   "name": "dataflo.ws-amqp",
-  "version": "0.0.1",
-  "description": "AMQP module for dataflo.ws framework",
+  "version": "0.0.2",
+  "description": "AMQP/Socket.io module for dataflo.ws framework",
   "main": "initiator/amqp.js",
   "scripts": {
-    "postinstall": "node -e \"require('dataflo.ws')('dataflo.ws-amqp')\""
+    "postinstall":
+      "node -e \"require('dataflo.ws').install('dataflo.ws-amqp')\""
   },
   "repository": {
     "type": "git",
